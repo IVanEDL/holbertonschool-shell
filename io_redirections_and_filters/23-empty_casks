@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -laR | cut -d " " -f5,9 | tr -d "0"
+find . type d,f -empty | rev | cut -f 1 -d '/' | rev
